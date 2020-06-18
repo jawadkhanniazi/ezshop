@@ -1,0 +1,9 @@
+******************************************************************************************************
+New Log  Dated 2020-05-05- 02-02-30
+******************************************************************************************************
+Internet Connection 
+Attemp to login
+Into login Func
+ali
+Error while uploading image
+com.google.cloud.storage.StorageException: firebase-adminsdk-9guhk@shopmanagmnet.iam.gserviceaccount.com does not have storage.objects.create access to test-667dc.appspot.com/EZcreds.

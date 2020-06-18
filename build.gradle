@@ -1,0 +1,33 @@
+apply plugin: 'java'
+apply plugin: 'jacoco'
+apply plugin: 'application'
+
+mainClassName = 'EasyShop.Main'
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation     'junit:junit:4.13'
+    //Firebase Admin SDK 
+    implementation 'com.google.firebase:firebase-admin:6.12.2'
+    implementation files('bin/libs/sqlite-jdbc-3.30.1.jar')
+    implementation files('bin/libs/jnotify.jar')
+}
+
+version = '3.2.1'
+
+jar {
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    manifest {
+        attributes("Implementation-Title": "Gradle",
+                   "Implementation-Version": archiveVersion,
+                    "Main-Class":"EasyShop.Main")
+    }
+    destinationDirectory = file("$rootDir/my-jar")
+    archivesBaseName = 'app'
+}

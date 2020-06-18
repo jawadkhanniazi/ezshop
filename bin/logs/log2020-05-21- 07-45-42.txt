@@ -1,0 +1,11 @@
+******************************************************************************************************
+New Log  Dated 2020-05-21- 07-45-42
+******************************************************************************************************
+Internet Connection 
+Attemp to login
+Into login Func
+roshan
+Into IMG Uploder func
+Out of Uploader Func
+Into cat const
+Into ds
